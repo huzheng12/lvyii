@@ -1,0 +1,69 @@
+{
+  "msg": "操作成功",
+  "code": 200,
+  "data": [
+      {
+          "name": "Dashboard",
+          "path": "/dashboard",
+          "hidden": false,
+          "redirect": "noRedirect",
+          "component": "Layout",
+          "alwaysShow": true,
+          "meta": {
+              "title": "系统管理",
+              "icon": "system",
+              "noCache": false
+          },
+          "children": [
+              {
+                  "name": "Workplace",
+                  "path": "Workplace",
+                  "hidden": false,
+                  "component": "dashboard/Workplace/index",
+                  "meta": {
+                      "title": "用户管理",
+                      "icon": "user",
+                      "noCache": false
+                  }
+              }
+          ]
+      },
+      {
+          "name": "Account",
+          "path": "/account",
+          "hidden": false,
+          "redirect": "noRedirect",
+          "component": "Layout",
+          "alwaysShow": true,
+          "meta": {
+              "title": "系统监控",
+              "icon": "monitor",
+              "noCache": false
+          },
+          "children": [
+              {
+                  "name": "Center",
+                  "path": "center",
+                  "hidden": false,
+                  "component": "account/center/index",
+                  "meta": {
+                      "title": "在线用户",
+                      "icon": "online",
+                      "noCache": false
+                  }
+              },
+              {
+                  "name": "Interesttreasure",
+                  "path": "interesttreasure",
+                  "hidden": false,
+                  "component": "interesttreasure/set",
+                  "meta": {
+                      "title": "定时任务",
+                      "icon": "job",
+                      "noCache": false
+                  }
+              }
+          ]
+      }
+  ]
+}
